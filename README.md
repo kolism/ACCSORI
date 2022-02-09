@@ -1,5 +1,7 @@
 # 🎀ACCSORI
- Drop-In CSS styles for your site!
+ Stunning drop-In CSS styles for your site!
+ 
+ *Note: this is a dark theme*
 
  ### Demo
  See 🎀ACSSORI in action here:
