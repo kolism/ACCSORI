@@ -1,11 +1,11 @@
-# 🎀ACCSORI
+# 🎀ACSSORI
  Stunning drop-In CSS styles for your site!
  
  *Note: this is a dark theme*
 
  ### Demo
  See 🎀ACSSORI in action here:
- [Design Palette Demo](https://accsori.vercel.app/)
+ [Design Palette Demo](https://acssori.vercel.app)
 
  ### How to use this?
  In your HTML header tag, include a link to the acssori.css file
