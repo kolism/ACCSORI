@@ -27,6 +27,15 @@
   "bugs": {
     "url": "https://github.com/kolism/ACCSORI/issues"
   },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/kolism/acssori.git",
+    "basePath": "dist",
+    "files": [
+      "acssori.min.css",
+      "acssori.css"
+    ]
+  },
   "homepage": "https://acssori.vercel.app",
   "dependencies": {
     "del": "^6.0.0",
