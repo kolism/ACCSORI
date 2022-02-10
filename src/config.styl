@@ -1,0 +1,71 @@
+// Spacing
+base = 16px
+base-line-height = 1.4
+base-font-size = 1.6em
+base-font-weight = 300
+
+// Colors
+color-black = #111111
+color-gray = #A7A7A7
+color-dark-gray = #222
+color-white = #F5F5F5
+color-blue = #2196F3
+color-cyan = #00BCD4
+color-light-blue = #03A9F4
+color-red = #F44336
+color-yellow = #FFEB3B
+color-orange = #FF9800
+color-green = #4CAF50
+color-blue-grey = #607D8B
+color-purple = #9C27B0
+color-deep-purple = #651FFF
+color-primary = color-deep-purple
+color-secondary = color-blue
+color-info = color-light-blue
+color-accent = #FF4081
+color-dark = #020001
+color-light = #f4f4f4
+
+// Fonts
+font = "Abel", "Avenir", "Avenir Next", "Gill Sans / Gill Sans MT",
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif
+
+// Typography Scaler
+// let s = size, b = base (1rem), r = ratio, and l = level -> s = b * (r ^ l)
+typ-sz-base = base
+
+typ-sz-ratio = 1.15
+typ-sz-1 = round(typ-sz-base * (typ-sz-ratio ** 6), 3)
+typ-sz-2 = round(typ-sz-base * (typ-sz-ratio ** 5), 3)
+typ-sz-3 = round(typ-sz-base * (typ-sz-ratio ** 4), 3)
+typ-sz-4 = round(typ-sz-base * (typ-sz-ratio ** 3), 3)
+typ-sz-5 = round(typ-sz-base * (typ-sz-ratio ** 2), 3)
+typ-sz-6 = round(typ-sz-base * typ-sz-ratio, 3)
+typ-sz-base-up = round(typ-sz-base * (typ-sz-ratio * 1.5), 3)
+
+typ-sz-sm-ratio = 1.13
+typ-sz-sm-1 = round(typ-sz-base * (typ-sz-sm-ratio ** 6), 3)
+typ-sz-sm-2 = round(typ-sz-base * (typ-sz-sm-ratio ** 5), 3)
+typ-sz-sm-3 = round(typ-sz-base * (typ-sz-sm-ratio ** 4), 3)
+typ-sz-sm-4 = round(typ-sz-base * (typ-sz-sm-ratio ** 3), 3)
+typ-sz-sm-5 = round(typ-sz-base * (typ-sz-sm-ratio ** 2), 3)
+typ-sz-sm-6 = round(typ-sz-base * typ-sz-sm-ratio, 3)
+typ-sz-sm-up = round(typ-sz-base * (typ-sz-sm-ratio * 1.5), 3)
+
+// Grid
+columns = 12
+
+// Transition
+transition = all .2s ease
+
+// Border
+border(color)
+  border: 1px solid color
+
+border-radius()
+  border-radius: 0.2em
+
+border-round(color)
+  border(color)
+  border-radius()

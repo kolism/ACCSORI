@@ -1,0 +1,8 @@
+# node modules
+node_modules
+
+# package json lock
+package-lock.json
+
+# store
+.DS_Store
