@@ -425,6 +425,10 @@ a.larger {
     margin: 0;
 }
 
+.m-base {
+    margin: 16px;
+}
+
 .mt-base {
     margin-top: 16px;
 }
