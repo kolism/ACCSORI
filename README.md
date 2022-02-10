@@ -1,5 +1,5 @@
 # 🎀ACSSORI
- Stunning drop-In CSS styles for your site!
+ Stunning responsive drop-in CSS styles for your site!
  
  *Note: this is a dark theme (purple/blue/gray color palette)*
 
