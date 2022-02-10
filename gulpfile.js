@@ -62,28 +62,7 @@ gulp.task("acssori-build", () => {
   return stream; // signal async completion
 });
 
-/* gulp.task("stylus-minify", gulp.series("stylus-build"), () => {
-  return gulp
-    .src([`${dist_folder}acssori.css`])
-    .pipe(minifyCss())
-    .pipe(header(comment))
-    .pipe(size())
-    .pipe(
-      size({
-        gzip: true,
-      })
-    )
-    .pipe(concat("acssori.min.css"))
-    .pipe(gulp.dest(dist_folder));
-}); */
-
-//gulp.task("build", gulp.series("clear", "stylus-build", "stylus-minify"));
-
-/*gulp.task("watch", function () {
-  gulp.watch(["src/*.css"], ["default"]);
-});*/
-
 gulp.task("watch", gulp.series("acssori-build"), function () {
-  gulp.watch(`${src_folder}[!_]*.styl`, gulp.series("acssori-build")); // watch for changes and run the css task
+  gulp.watch(`${src_folder}*.styl`, gulp.series("acssori-build")); // watch for changes and run the css task
 });
 gulp.task("default", gulp.series("acssori-build"));
