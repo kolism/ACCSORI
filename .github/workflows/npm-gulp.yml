@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: checkout
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -35,7 +35,6 @@ jobs:
 
       - name: commit
         run: |
-          # Stage the file, commit and push
           git add dist/acssori.css
           git add dist/acssori.min.css
           git commit -m "Build CSS to DIST"
